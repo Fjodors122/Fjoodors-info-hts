@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ht4O Fjodors — Meine Seite</title>
+
+  <style>
+    :root{
+      --bg:#f4f6f8;
+      --card:#ffffff;
+      --accent:#1f6feb;
+      --text:#1f2937;
+      --muted:#6b7280;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg),#eef2f7);
+      color:var(--text);
+    }
+
+    .site {
+      min-height:100%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:40px 16px;
+      box-sizing:border-box;
+    }
+
+    .card {
+      width:100%;
+      max-width:880px;
+      background:var(--card);
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(15,23,42,0.08);
+      text-align:center;
+    }
+
+    h1{
+      margin:0 0 8px;
+      font-size:1.9rem;
+      letter-spacing:-0.02em;
+    }
+
+    p.lead{
+      margin:0 0 18px;
+      color:var(--muted);
+    }
+
+    .actions{
+      margin:18px 0;
+    }
+
+    .btn {
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid rgba(31,111,235,0.12);
+      background:linear-gradient(180deg,rgba(31,111,235,0.08),transparent);
+      color:var(--accent);
+    }
+
+    .footer {
+      margin-top:22px;
+      border-top:1px solid #eef2f5;
+      padding-top:16px;
+      font-size:0.95rem;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .signature {
+      font-weight:700;
+      color:#111827;
+    }
+
+    @media (max-width:520px){
+      .card{padding:20px;border-radius:12px;}
+      h1{font-size:1.5rem;}
+    }
+  </style>
+</head>
+<body>
+  <main class="site">
+    <article class="card">
+      <h1>Willkommen — ht4O Fjodors</h1>
+      <p class="lead">Dies ist meine einfache Webseite. Hier kannst du Informationen, Bilder oder Links hinzufügen.</p>
+
+      <div class="actions">
+        <a class="btn" href="#" onclick="alert('Hier kannst du einen Link setzen')">Mehr erfahren</a>
+      </div>
+
+      <div class="footer" role="contentinfo">
+        <div>Gehostet mit ❤️ auf einem Raspberry Pi</div>
+        <div class="signature">ht4O Fjodors</div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
